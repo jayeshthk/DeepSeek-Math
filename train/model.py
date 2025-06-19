@@ -21,6 +21,8 @@ class DeepSeekMathConfig:
     use_cache: bool = True
     rope_scaling: Optional[dict] = None
     tie_word_embeddings: bool = False
+    # output_attentions:bool=True
+    # output_hidden_states:int=12
 
 class RMSNorm(nn.Module):
     def __init__(self, hidden_size, eps=1e-6):
